@@ -6,29 +6,29 @@
     <meta charset="UTF-8">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Information Theoretic Model Predictive Q-Learning</title>
+<title>Overview | Information Theoretic Model Predictive Q-Learning</title>
 <meta name="generator" content="Jekyll v3.8.7" />
-<meta property="og:title" content="Information Theoretic Model Predictive Q-Learning" />
+<meta property="og:title" content="Overview" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
 <meta property="og:site_name" content="Information Theoretic Model Predictive Q-Learning" />
 <script type="application/ld+json">
-{"name":"Information Theoretic Model Predictive Q-Learning","@type":"WebSite","url":"http://localhost:4000/","headline":"Information Theoretic Model Predictive Q-Learning","@context":"https://schema.org"}</script>
+{"name":"Information Theoretic Model Predictive Q-Learning","@type":"WebSite","url":"http://localhost:4000/","headline":"Overview","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="/assets/css/style.css?v=d96b311306e4c369813b1de563e107375f6d3578">
+    <link rel="stylesheet" href="/assets/css/style.css?v=6157f58dc46e3f05b10e4b0a1df5a583652cfa26">
   </head>
   <body>
     <!-- <a id="skip-to-content" href="#content">Skip to the content.</a> -->
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">Information Theoretic Model Predictive Q-Learning</h1>
+      <h1 class="project-name">Overview</h1>
       <!-- <h2 class="project-tagline"></h2> -->
-      <h2 class="project-authors">Mohak Bhardwaj^1^, Ankur Handa, Dieter Fox, Byron Boots</h2>
+      <h2 class="project-authors">Mohak Bhardwaj, Ankur Handa, Dieter Fox, Byron Boots</h2>
       <h2 class="project-conference"></h2>     
       <a href="https://arxiv.org/abs/2001.02153" class="btn">Full Paper (arXiv)</a>
       <!-- 
@@ -39,6 +39,15 @@
 
     <main id="content" class="main-content" role="main">
       
+<h2 id="-overview-"><center> Overview </center></h2>
+
+<p> Model-free Reinforcement Learning (RL) works well when experience can be collected cheaply and model based RL is effective when system dynamics can be modeled accurately. However, both assumptions can be violated in real world problems such as robotics, where querying the system can be expensive and real world dynamics can be difficult to model. In contrast to RL, Model Predictive Control (MPC) algorithms use a simulator to optimize a simple policy class online, constructing a closed-loop controller that can effectively contend with real-world dynamics. MPC performance is usually limited by factors such as model bias and the limited horizon of optimization. In this work, we present a novel theoretical connection between information theoretic MPC and entropy regularized RL and develop a Q-learning algorithm that can leverage biased models. We validate the proposed algorithm on sim-to-sim continuous control tasks and compare it against information theoretic MPC and soft Q-Learning, where we demonstrate faster learning with much fewer system interactions (a few minutes with real system parameters) and better performance compared to MPC and soft Q-Learning even in the presence of sparse rewards </p>
+
+<!-- We present an approach to RL that leverages the complementary properties of model-free reinforcement learning and model-based optimal control. Our proposed method views MPC as a way to simultaneously approximate and optimize a local Q function via simulation, and Q-learning as a way to improve MPC using real-world data. We focus on the paradigm of entropy regularized reinforcement learning where the aim is to learn a stochastic policy that minimizes the cost-to-go as well as KL divergence with respect to a prior policy. This has been explored in RL and Inverse RL for its better sample efficiency and exploratory properties. We discuss how this formulation of reinforcement learning has deep connections to information theoretic stochastic optimal control where the objective is to find control inputs that minimize the cost while staying close to the passive dynamics of the system. This helps in both injecting domain knowledge into the controller as well as mitigating issues caused by over optimizing the biased estimate of the current cost due to model error and the shorter horizon. We explore this connection in depth and derive an infinite horizon information theoretic model predictive control algorithm based on Williams et al. (2017). We test our approach called Model Predictive Q-Learning (MPQ) on simulated continuous control tasks a. </p> -->
+
+<h2 id="-video-of-experiments-"><center> Video of Experiments </center></h2>
+
+<center> <iframe width="560" height="315" src="https://www.youtube.com/embed/OO3obHJEk8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> </center>
 
 
       <!-- <footer class="site-footer">
